@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BunnyBehave : MonoBehaviour {
 	private Rigidbody2D myRigidBunny;
@@ -18,5 +19,12 @@ public class BunnyBehave : MonoBehaviour {
 			myRigidBunny.AddForce (transform.up * jumpForce);
 		}
 		myAnim.SetFloat ("vVelocity", myRigidBunny.velocity.y);
+
+	}
+	void OnCollisionEnter2D(Collision2D bCollision)
+	{
+		if (bCollision.collider.gameObject.layer == LayerMask.NameToLayer ("Enemy")) {
+			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
+		}
 	}
 }
