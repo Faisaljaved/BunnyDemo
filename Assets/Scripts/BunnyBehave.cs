@@ -12,6 +12,7 @@ public class BunnyBehave : MonoBehaviour {
 	private Collider2D mycollider;
 	public Text scoreText;
 	private float startTime;
+	private float jumpsLeft = 2;
 	// Use this for initialization
 	void Start () {
 		myRigidBunny = GetComponent<Rigidbody2D> ();
@@ -23,8 +24,17 @@ public class BunnyBehave : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (bunnyHurtTime == -1) {
-			if (Input.GetButtonUp ("jump")) {
-				myRigidBunny.AddForce (transform.up * jumpForce);
+			if (Input.GetButtonUp ("jump") && jumpsLeft > 0) {
+				if (myRigidBunny.velocity.y < 0) { 
+					myRigidBunny.velocity = (Vector2.up);
+				}	
+				if (jumpsLeft == 1) {
+					myRigidBunny.AddForce (transform.up * jumpForce * 0.75f);
+				} else {
+					myRigidBunny.AddForce (transform.up * jumpForce);
+				}
+					jumpsLeft--;
+				
 			}
 				myAnim.SetFloat ("vVelocity", myRigidBunny.velocity.y);
 			scoreText.text = (Time.time - startTime).ToString ("0.0");
@@ -49,6 +59,10 @@ public class BunnyBehave : MonoBehaviour {
 			myRigidBunny.velocity = Vector2.zero;
 			myRigidBunny.AddForce (transform.up * jumpForce);
 			mycollider.enabled = false;
+		} 
+		else if (bCollision.collider.gameObject.layer == LayerMask.NameToLayer ("Ground")) {
+			jumpsLeft = 2;
 		}
+			
 	}
 }

@@ -174,7 +174,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 340271399}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,8 +319,134 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabSpawn: {fileID: 4950252048678796, guid: d3ca7df2254ff9a42a56ca9ec18faa44,
     type: 2}
-  spawnRate: 1
-  randomDelay: 2
+  spawnCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.15468107
+      value: 1.9097717
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: -0.14701785
+      value: 1.8378423
+      inSlope: -17.052294
+      outSlope: -17.052294
+      tangentMode: 0
+    - serializedVersion: 2
+      time: -0.1243755
+      value: 1.3938335
+      inSlope: -7.1525574
+      outSlope: -7.1525574
+      tangentMode: 0
+    - serializedVersion: 2
+      time: -0.023600567
+      value: 1.7374737
+      inSlope: -2.8520823
+      outSlope: -2.8520823
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.023541959
+      value: 0.97255194
+      inSlope: 0.52363896
+      outSlope: 0.52363896
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.092786446
+      value: 1.2466784
+      inSlope: 0.87201595
+      outSlope: 0.87201595
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.16132727
+      value: 1.124081
+      inSlope: 3.7515163
+      outSlope: 3.7515163
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.17491853
+      value: 1.6522367
+      inSlope: 5.9336424
+      outSlope: 5.9336424
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.2717846
+      value: 1.4374763
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.371674
+      value: 1.297473
+      inSlope: -6.9129467
+      outSlope: -6.9129467
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.41618365
+      value: 0.77177274
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.47398117
+      value: 1.232821
+      inSlope: 5.4466724
+      outSlope: 5.4466724
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.52643585
+      value: 1.1826946
+      inSlope: 1.9586086
+      outSlope: 1.9586086
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.587145
+      value: 1.3968463
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.6853957
+      value: 1.1307403
+      inSlope: -7.0112944
+      outSlope: -7.0112944
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.73661494
+      value: 1.1132848
+      inSlope: -8.511543
+      outSlope: -8.511543
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.7797706
+      value: 0.6589979
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.8251123
+      value: 0.9722918
+      inSlope: 8.133352
+      outSlope: 8.133352
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.91727537
+      value: 0.94852054
+      inSlope: 6.8295
+      outSlope: 6.8295
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.98074186
+      value: 1.6986341
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  curveInSeconds: 15
+  jitter: 0.25
 --- !u!4 &563800264
 Transform:
   m_ObjectHideFlags: 0
@@ -830,7 +956,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2010668152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.14, y: 0.6, z: 0}
+  m_LocalPosition: {x: -5.11, y: -1.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
