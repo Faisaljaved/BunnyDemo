@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BunnyBehave : MonoBehaviour {
 	private Rigidbody2D myRigidBunny;
@@ -9,11 +10,14 @@ public class BunnyBehave : MonoBehaviour {
 	private Animator myAnim;
 	private float bunnyHurtTime = -1;
 	private Collider2D mycollider;
+	public Text scoreText;
+	private float startTime;
 	// Use this for initialization
 	void Start () {
 		myRigidBunny = GetComponent<Rigidbody2D> ();
 		myAnim = GetComponent<Animator> ();
 		mycollider = GetComponent<Collider2D> ();
+		startTime = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -22,8 +26,9 @@ public class BunnyBehave : MonoBehaviour {
 			if (Input.GetButtonUp ("jump")) {
 				myRigidBunny.AddForce (transform.up * jumpForce);
 			}
-			myAnim.SetFloat ("vVelocity", myRigidBunny.velocity.y);
-		} else {
+				myAnim.SetFloat ("vVelocity", myRigidBunny.velocity.y);
+			scoreText.text = (Time.time - startTime).ToString ("0.0");
+	} else {
 			if (Time.time > bunnyHurtTime + 2) {
 				SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
 			}
