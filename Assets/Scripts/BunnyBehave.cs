@@ -25,6 +25,11 @@ public class BunnyBehave : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			SceneManager.LoadScene ("Title");
+		}
+
+
 		if (bunnyHurtTime == -1) {
 			if (Input.GetButtonUp ("jump") && jumpsLeft > 0) {
 				if (myRigidBunny.velocity.y < 0) { 

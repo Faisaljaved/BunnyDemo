@@ -1,0 +1,71 @@
+Mono path[0] = 'C:/Users/Faisal/Documents/GitHub/BunnyDemo/dude_Data/Managed'
+Mono path[1] = 'C:/Users/Faisal/Documents/GitHub/BunnyDemo/dude_Data/Mono'
+Mono config path = 'C:/Users/Faisal/Documents/GitHub/BunnyDemo/dude_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Faisal/Documents/GitHub/BunnyDemo/dude_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55362
+Multi-casting "[IP] 192.168.0.2 [Port] 55362 [Flags] 2 [Guid] 1243287807 [EditorId] 1631361704 [Version] 1048832 [Id] WindowsPlayer(Faisal-PC) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55362]
+PlayerConnection already initialized - listening to [0.0.0.0:55362]
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 950 (ID=0x1402)
+    Vendor:   NVIDIA
+    VRAM:     2016 MB
+    Driver:   21.21.13.7595
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.047 seconds
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Faisal\Documents\GitHub\BunnyDemo\dude_Data\Managed\System.dll (this message is harmless)
+desktop: 1280x800 75Hz; virtual: 1280x800 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.241066 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.669773 ms
+System memory in use before: 19.5 MB.
+System memory in use after: 19.5 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 483.
+Total: 0.420999 ms (FindLiveObjects: 0.067820 ms CreateObjectMapping: 0.032417 ms MarkObjects: 0.278533 ms  DeleteObjects: 0.041374 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.891478 ms
+System memory in use before: 19.5 MB.
+System memory in use after: 19.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 476.
+Total: 11.274861 ms (FindLiveObjects: 0.039242 ms CreateObjectMapping: 0.021327 ms MarkObjects: 11.172490 ms  DeleteObjects: 0.040948 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.054845 ms
+System memory in use before: 19.5 MB.
+System memory in use after: 19.5 MB.
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 483.
+Total: 0.413748 ms (FindLiveObjects: 0.074218 ms CreateObjectMapping: 0.022606 ms MarkObjects: 0.296022 ms  DeleteObjects: 0.019621 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.214799 ms
+System memory in use before: 19.5 MB.
+System memory in use after: 19.5 MB.
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 483.
+Total: 0.409483 ms (FindLiveObjects: 0.061422 ms CreateObjectMapping: 0.024739 ms MarkObjects: 0.312657 ms  DeleteObjects: 0.009383 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1478 -> priority: 1 
