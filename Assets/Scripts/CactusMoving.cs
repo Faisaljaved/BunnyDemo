@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CactusMoving : MonoBehaviour {
-	public float speed = 10;
+	public float speed = 5;
 	// Use this for initialization
 	void Start () {
 		
