@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b47d19c7f03ce7a4ba60ba2cdbd55c9a
-timeCreated: 1488875433
+guid: 8da6035472ff76d4893559323828124c
+timeCreated: 1489922107
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -58,22 +58,6 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-  - buildTarget: Android
-    maxTextureSize: 4096
-    textureFormat: 4
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 1
   spriteSheet:
     serializedVersion: 2
     sprites: []

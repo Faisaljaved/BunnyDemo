@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour {
 
+	public GameObject audioOn;
+	public GameObject audioOff;
 	// Use this for initialization
 	void Start () {
-		
+		SoundState ();
 	}
 	
 	// Update is called once per frame
@@ -19,5 +21,31 @@ public class MenuController : MonoBehaviour {
 	}
 	public void StartGame(){
 		SceneManager.LoadScene ("MainGame");
+	}
+	public void ToggleSound(){
+	
+		if (PlayerPrefs.GetInt ("Muted", 0) == 0) {
+			PlayerPrefs.SetInt ("Muted", 1);
+		}
+		else {
+			PlayerPrefs.SetInt ("Muted", 0);
+		}
+		SoundState ();
+	}
+	public void SoundState()
+	{
+		if (PlayerPrefs.GetInt ("Muted", 0) == 0) {
+		
+			AudioListener.pause = false;
+			audioOn.SetActive (true);
+			audioOff.SetActive (false);
+		}
+		else
+		{
+					AudioListener.pause = true;
+			audioOn.SetActive (false);
+			audioOff.SetActive (true);
+		}
+
 	}
 }

@@ -31,7 +31,7 @@ public class BunnyBehave : MonoBehaviour {
 
 
 		if (bunnyHurtTime == -1) {
-			if (Input.GetButtonUp ("jump") && jumpsLeft > 0) {
+			if (Input.GetButtonUp ("Fire1") && jumpsLeft > 0) {
 				if (myRigidBunny.velocity.y < 0) { 
 					myRigidBunny.velocity = (Vector2.up);
 				}	
