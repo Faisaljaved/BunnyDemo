@@ -15,6 +15,8 @@ public class BunnyBehave : MonoBehaviour {
 	private float jumpsLeft = 2;
 	public AudioSource jumpSfx;
 	public AudioSource deathSfx;
+	private float currentScore;
+	private float bestScore;
 	// Use this for initialization
 	void Start () {
 		myRigidBunny = GetComponent<Rigidbody2D> ();
@@ -36,7 +38,7 @@ public class BunnyBehave : MonoBehaviour {
 					myRigidBunny.velocity = (Vector2.up);
 				}	
 				if (jumpsLeft == 1) {
-					myRigidBunny.AddForce (transform.up * jumpForce * 0.75f);
+					myRigidBunny.AddForce (transform.up * jumpForce * 0.70f);
 				} else {
 					myRigidBunny.AddForce (transform.up * jumpForce);
 				}
@@ -67,6 +69,13 @@ public class BunnyBehave : MonoBehaviour {
 			myRigidBunny.AddForce (transform.up * jumpForce);
 			mycollider.enabled = false;
 			deathSfx.Play ();
+
+			bestScore = PlayerPrefs.GetFloat ("BestScore", 0);
+			currentScore = Time.time - startTime;
+			if (currentScore > bestScore) {
+			PlayerPrefs.SetFloat ("BestScore", currentScore);
+			}
+
 		} 
 		else if (bCollision.collider.gameObject.layer == LayerMask.NameToLayer ("Ground")) {
 			jumpsLeft = 2;
