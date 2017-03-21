@@ -461,7 +461,8 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   cloudProjectId: f3732295-a414-4296-ad8a-944133104f3c
   projectName: BunnyRunDemo
   organizationId: faisaljaved
